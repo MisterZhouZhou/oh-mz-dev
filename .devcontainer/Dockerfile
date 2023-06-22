@@ -1,1 +1,1 @@
-FROM oh-mz-docker
+FROM oh-mz-docker-linux

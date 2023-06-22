@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.194.0/containers/docker-existing-dockerfile
 {
-	"name": "OhMyDev",
+	"name": "OhMzDockerLinuxDev",
 	"context": "..",
 	"dockerFile": "./Dockerfile",
 	"settings": {},
@@ -9,11 +9,11 @@
 		"golang.go",
 		"dbaeumer.vscode-eslint",
 		"esbenp.prettier-vscode",
-		// "rebornix.ruby",
 		"castwide.solargraph",
 		"kaiwood.endwise",
-		"sianglim.slim",
-		"jnbt.vscode-rufo"
+		"jnbt.vscode-rufo",
+		"MS-CEINTL.vscode-language-pack-zh-hans",
+		"denoland.vscode-deno"
 	],
 	"runArgs": [
 		"--privileged",
@@ -30,7 +30,8 @@
 		"source=ssh,target=/root/.ssh,type=volume",
 		"source=go-bin,target=/root/go/bin,type=volume",
 		"source=pnpm-bin,target=/root/.local/share/pnpm,type=volume",
-		// "source=gems,target=/usr/local/rvm/gems,type=volume",
+		"source=gems,target=/usr/local/rvm/gems,type=volume",
+    "source=deno-bin,target=/root/.dvm/bin,type=volume",
     //
     // 修改之前请看一下上面内容是否已经包含你需要的挂载
     // 重复挂载将导致容器启动失败！
