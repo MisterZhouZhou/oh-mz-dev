@@ -1,1 +1,1 @@
-FROM oh-mz-docker-linux
+FROM mzlmdocker/oh-mz-docker-linux:0.0.1
